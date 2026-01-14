@@ -72,4 +72,4 @@
 
 ---
 
-© 2025 CoZpaze by Naratip Suwanich สงวนลิขสิทธิ์.
+**© 2025 CoZpaze by Naratip Suwanich สงวนลิขสิทธิ์.**
