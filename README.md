@@ -38,9 +38,9 @@
 2. **ติดตั้งฐานข้อมูล (Database Setup)**
    - เปิด phpMyAdmin (ปกติคือ `http://localhost/phpmyadmin`)
    - สร้างฐานข้อมูลใหม่ชื่อ **`co_working_pj`**
-   - Import ไฟล์ฐานข้อมูล `.sql` ที่เตรียมไว้เข้าสู่ฐานข้อมูลที่สร้างขึ้น
-   
-   *(หมายเหตุ: หากคุณยังไม่ได้ Export ฐานข้อมูล ให้ทำการ Export ออกมาจากเครื่องเดิมก่อนผ่าน phpMyAdmin หรือ mysqldump)*
+   - Import ไฟล์ SQL ที่แนบมาในโปรเจค
+     - ไฟล์อยู่ที่: `database/co_working_pj.sql`
+     - ไปที่แท็บ **Import** > เลือกไฟล์ `database/co_working_pj.sql` > กด **Go**
 
 3. **การตั้งค่า (Configuration)**
    - เปิดไฟล์ `final_use/config/db_connect.php`
