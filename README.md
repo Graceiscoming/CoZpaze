@@ -71,5 +71,5 @@
   - `userwallets/` - ระบบกระเป๋าเงิน
 
 ---
-# Developer : Naratip Suwanich
+**©Naratip Suwanich**
 © 2025 CoZpaze. สงวนลิขสิทธิ์.
