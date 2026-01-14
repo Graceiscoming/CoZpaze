@@ -476,9 +476,9 @@ ALTER TABLE `reviews`
 ALTER TABLE `searchkeywords`
   ADD CONSTRAINT `fk_user_search` FOREIGN KEY (`user_id`) REFERENCES `userinfo` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
---
+---
 -- Constraints for table `transactions`
---
+---
 ALTER TABLE `transactions`
   ADD CONSTRAINT `fk_transactions_user` FOREIGN KEY (`user_id`) REFERENCES `userinfo` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
