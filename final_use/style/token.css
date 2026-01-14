@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+    background: linear-gradient(120deg, #e0f7fa, #fce4ec);
+    background-attachment: fixed;
+    padding-top: 5rem;
+    color: #333;
+  }
+  
+  .container {
+    padding-top: 80px;
+    max-width: 960px;
+    margin: 60px auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 28px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    backdrop-filter: blur(5px);
+  }
+  
+  .container h1 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block; 
+    background: linear-gradient(to right, #ec407a, #7c4dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent;
+  }
+  
+  .token-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+  
+  .token-item {
+    background: linear-gradient(135deg, #fff3e0, #ffe0f7);
+    border-radius: 20px;
+    padding: 24px;
+    width: 170px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .token-item:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.1);
+    border-color: #ce93d8;
+  }
+  
+  .token-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+  }
+  
+  .token-item p {
+    margin: 0;
+    font-weight: bold;
+    color: #6a1b9a;
+    font-size: 1.1rem;
+  }
+  
+  .btn, .btn-primary {
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  
+  .btn {
+    background: #f8bbd0;
+    color: #880e4f;
+  }
+  
+  .btn:hover {
+    background: #f48fb1;
+  }
+  
+  .btn-primary {
+    background: #7e57c2;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background: #9575cd;
+  }
+  

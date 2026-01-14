@@ -1,0 +1,180 @@
+body {
+    font-family: 'Sarabun', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #FFE5EC, #E0F7FA);
+    display: flex;
+    min-height: 100vh;
+  }
+  .sidebar {
+    width: 220px;
+    background-color: #fff;
+    padding: 2rem 1.5rem;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.05);
+  }
+  .sidebar h2 {
+    color: #ec4899;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+  }
+  .menu-item {
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #666;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .logout {
+    color: #f87171;
+    position: absolute;
+    bottom: 2rem;
+  }
+  
+  .profile-content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    background: #FFE5EC;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .card-header img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #f472b6;
+  }
+  .card-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 2rem;
+  }
+  label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+  input {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+  .save-btn {
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(to right, #ec4899, #8b5cf6);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  a.menu-item {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      padding: 10px;
+    }
+    
+    a.menu-item:hover {
+      background-color: #f0f0f0;
+    }
+  
+  
+    
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+    
+      .sidebar {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: white;
+        border-bottom: 1px solid #eee;
+      }
+    
+      .sidebar h2 {
+        display: none;
+      }
+    
+      .menu-item {
+        font-size: 0.9rem;
+        margin: 0;
+        padding: 0.5rem;
+      }
+    
+      .logout {
+        position: static;
+      }
+    
+      .profile-content {
+        padding: 1rem;
+      }
+    
+      .card {
+        padding: 1.5rem;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+    
+      .form-grid {
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+      }
+    
+      .card-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .card-header img {
+        width: 90px;
+        height: 90px;
+      }
+    
+      .save-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    
+      .home-button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+      }
+    }
+    

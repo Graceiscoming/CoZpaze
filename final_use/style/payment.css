@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+    background: linear-gradient(120deg, #e0f7fa, #fce4ec);
+    background-attachment: fixed;
+    padding-top: 5rem;
+    color: #333;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 28px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #ec407a, #7c4dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
