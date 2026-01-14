@@ -1,74 +1,74 @@
 # CoZpaze
 
-**CoZpaze** is a web-based platform for booking co-working spaces, designed to help students and freelancers find the perfect spot to work or study. The system features a token-based payment method and supports multiple user roles including Users, Location Owners, and Admins.
+**CoZpaze** เป็นแพลตฟอร์มเว็บไซต์สำหรับจอง Co-working space ที่ออกแบบมาเพื่อช่วยให้นักเรียน นักศึกษา และฟรีแลนซ์ค้นหาสถานที่ทำงานหรืออ่านหนังสือได้อย่างสะดวกสบาย ระบบมีการใช้ Token ในการชำระเงิน และรองรับผู้ใช้งานหลายรูปแบบ ทั้งผู้ใช้ทั่วไป (Users), เจ้าของสถานที่ (Location Owners), และผู้ดูแลระบบ (Admins)
 
-## 🚀 Features
+## 🚀 ฟีเจอร์หลัก (Features)
 
-### for Users
-- **Search & Discover**: Find co-working spaces by University, keywords, or location.
-- **Booking System**: Check availability and book spaces in real-time.
-- **Wallet & Tokens**: Built-in wallet system to top-up tokens and pay for services.
-- **Reviews**: Rate and review places you've visited.
+### สำหรับผู้ใช้งานทั่วไป (Users)
+- **ค้นหาและสำรวจ**: ค้นหา Co-working space ตามมหาวิทยาลัย, คำค้นหา, หรือสถานที่
+- **ระบบจอง**: ตรวจสอบสถานะว่างและจองสถานที่ได้แบบ Real-time
+- **กระเป๋าเงินและโทเคน**: ระบบกระเป๋าเงินภายในสำหรับเติม Token เพื่อใช้จ่ายค่าบริการ
+- **รีวิว**: ให้คะแนนและรีวิวสถานที่ที่เคยไปใช้งาน
 
-### for Location Owners
-- **Manage Listings**: Add, edit, and manage your co-working space details and images.
-- **Booking Management**: View and manage incoming bookings.
-- **Dashboard**: Track earnings and space usage.
+### สำหรับเจ้าของสถานที่ (Location Owners)
+- **จัดการรายการสถานที่**: เพิ่ม, แก้ไข, และจัดการรายละเอียดของสถานที่และรูปภาพ
+- **จัดการการจอง**: ดูและจัดการรายการจองที่เข้ามา
+- **แดชบอร์ด**: ติดตามรายได้และการใช้งานพื้นที่
 
-### for Admins
-- **System Management**: Overview of all users, locations, and transactions.
-- **Top-up Approvals**: Verify and approve token top-up requests.
-- **Content Moderation**: Manage reviews and keywords.
+### สำหรับผู้ดูแลระบบ (Admins)
+- **จัดการระบบ**: ดูภาพรวมของผู้ใช้, สถานที่, และรายการธุรกรรมทั้งหมด
+- **อนุมัติการเติมเงิน**: ตรวจสอบและอนุมัติคำขอเติม Token
+- **ดูแลเนื้อหา**: จัดการรีวิวและคำค้นหา (Keywords)
 
-## 🛠 Tech Stack
+## 🛠 เทคโนโลยีที่ใช้ (Tech Stack)
 
 - **Backend**: PHP (Native)
 - **Database**: MySQL
 - **Frontend**: HTML5, CSS3, Tailwind CSS, JavaScript
-- **Server**: Apache (via XAMPP recommended)
+- **Server**: Apache (แนะนำ XAMPP)
 
-## ⚙️ Installation & Setup
+## ⚙️ การติดตั้งและตั้งค่า (Installation)
 
-1. **Clone the repository**
+1. **Clone repository**
    ```bash
    git clone https://github.com/yourusername/CoZpaze.git
    ```
-   Place the project folder in your web server's root directory (e.g., `C:\xampp\htdocs\CoZpaze`).
+   นำโฟลเดอร์โปรเจคไปวางไว้ใน root directory ของ web server (เช่น `C:\xampp\htdocs\CoZpaze`)
 
-2. **Database Setup**
-   - Open phpMyAdmin (usually `http://localhost/phpmyadmin`).
-   - Create a new database named **`co_working_pj`**.
-   - Import the database file provided in the project (e.g., `database.sql`).
+2. **ติดตั้งฐานข้อมูล (Database Setup)**
+   - เปิด phpMyAdmin (ปกติคือ `http://localhost/phpmyadmin`)
+   - สร้างฐานข้อมูลใหม่ชื่อ **`co_working_pj`**
+   - Import ไฟล์ฐานข้อมูล `.sql` ที่เตรียมไว้เข้าสู่ฐานข้อมูลที่สร้างขึ้น
    
-   *(Note: If you haven't exported the database yet, you can do so via phpMyAdmin or `mysqldump`).*
+   *(หมายเหตุ: หากคุณยังไม่ได้ Export ฐานข้อมูล ให้ทำการ Export ออกมาจากเครื่องเดิมก่อนผ่าน phpMyAdmin หรือ mysqldump)*
 
-3. **Configuration**
-   - Open `final_use/config/db_connect.php`.
-   - Ensure the database credentials match your local setup:
+3. **การตั้งค่า (Configuration)**
+   - เปิดไฟล์ `final_use/config/db_connect.php`
+   - ตรวจสอบการตั้งค่าการเชื่อมต่อฐานข้อมูลให้ตรงกับเครื่องของคุณ:
      ```php
      $servername = "localhost";
      $username = "root";
-     $password = ""; // Default XAMPP password is empty
+     $password = ""; // รหัสผ่าน XAMPP ปกติจะเป็นค่าว่าง
      $dbname = "co_working_pj";
      ```
 
-4. **Run the Project**
-   - Open your browser and navigate to:
+4. **รันโปรเจค**
+   - เปิดเบราว์เซอร์ไปที่:
      `http://localhost/CoZpaze`
 
-## 📂 Project Structure
+## 📂 โครงสร้างโปรเจค (Project Structure)
 
-- `final_use/` - Core application files
-  - `admin/` - Admin control panel
-  - `booking/` - Booking logic and cart
-  - `config/` - Database connection
-  - `location_owner/` - Vendor dashboard
-  - `login_status/` - Authentication checks
-  - `style/` - CSS files
-  - `tokenshop/` - Payment and token system
-  - `uni/` - University assets
-  - `user/` - User profile and auth
-  - `userwallets/` - Wallet management
+- `final_use/` - ไฟล์หลักของระบบ
+  - `admin/` - ส่วนจัดการสำหรับ Admin
+  - `booking/` - ระบบการจองและตะกร้าสินค้า
+  - `config/` - การเชื่อมต่อฐานข้อมูล
+  - `location_owner/` - แดชบอร์ดเจ้าของสถานที่
+  - `login_status/` - ตรวจสอบการเข้าสู่ระบบ
+  - `style/` - ไฟล์ CSS ตกแต่ง
+  - `tokenshop/` - ระบบชำระเงินและ Token
+  - `uni/` - รูปภาพ/ข้อมูลมหาวิทยาลัย
+  - `user/` - โปรไฟล์ผู้ใช้และการจัดการบัญชี
+  - `userwallets/` - ระบบกระเป๋าเงิน
 
 ---
-© 2025 CoZpaze. All rights reserved.
+© 2025 CoZpaze. สงวนลิขสิทธิ์.
